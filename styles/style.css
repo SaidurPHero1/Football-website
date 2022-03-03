@@ -1,0 +1,427 @@
+/* Google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Common Styles */
+body{
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1050px;
+    margin-top: 27px;
+    margin-left: 180px;
+    margin-right: 210px;
+}
+/* Common Styles End */
+/* Header Styles Start */
+header{
+    width: 1440px;
+    height: 592px;
+    background: #2D25A0;
+}
+.header-part{
+    display: flex;
+    flex-direction: row;
+    padding-left: 108px;
+    padding-right: 140px;
+    padding-top: 50px;
+}
+.half-width{
+    width: 50%; 
+}
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    line-height: 80px;
+    transition: font-size 3s, transfrom 3s;
+}
+/* hover over h1 font*/
+h1:hover{
+    font-size: 80px;
+}
+.link-button{
+    background-color: #E02C6D;
+    height: 44px;
+    width: 168px;
+    display: flex;
+}
+.link-button a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 24px 10px 24px;
+}
+.fa-arrow-right{
+    color: #FFFFFF;
+    padding-left: 8px;
+    width: 16px;
+    height: 14px;
+}
+.half-width img{
+    width: 556px;
+    height: 438px;
+    transition: width 3s, height 3s,  transform 3s;
+}
+/*---------------- 
+hover over img 
+-----------------------*/
+.half-width img:hover{
+    width: 630px;
+    height: 500px;
+}
+/* Header Styles End */
+
+
+
+/* Main Part styles Start */
+.players-first-part{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    background-color: #FFFFFF;
+    padding-bottom: 33px;
+}
+h3{
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+/* players blog */
+.blogs .blog-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    color: #6C6C6C;
+   
+}
+.player-image img{
+    width: 330px;
+    height: 256px;
+}
+/* common styles */
+.players-second-part, .players-third-part, .players-fourth-part{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    justify-content: center;
+}
+.section-title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.schedules{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    grid-gap: 20px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+.schedule{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 20px;
+    background-color: wheat;
+    padding: 10px;
+    border-radius: 10px;
+}
+.teams, .team{
+    display: flex;
+    align-items: center;
+}
+.date-time{
+    display: flex;
+    align-items: center;
+}
+.fa-futbol, .fa-calendar-week, .fa-clock{
+    font-size: 35px;
+}
+.teams-name{
+    font-size: 20px;
+    margin-left: 10px;
+}
+/* champoin list Styles */
+.winners{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    grid-gap: 20px;
+    background-color: rgba(145, 109, 109, 0.274);
+    border-radius: 10px;
+    padding: 10px;
+}
+.champion-team{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+}
+.fa-trophy{
+    color: goldenrod;
+}
+/* champion list styles end */
+
+/* Main Parts Styles Ends */
+/* Footer Styles Start */
+footer{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+   
+}
+.footer{
+    width:483.87px;
+    height: 213px;
+    margin-bottom: 63px;
+    margin-top: 165px;
+}
+.footer-info{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;
+}
+.social-icon img{
+    height: 32px;
+    width: 32px;
+}
+h4{
+    font-size: 18px;
+}
+h5{
+    margin-top: 20px;
+}
+/* Footer Styles End */
+/* ----------------------media quaries------------------------- */
+/*------------------- 
+Mobiles divices
+------------------- */
+@media only screen and (max-width:688px) {
+header{
+    width: 100%;
+    height: 695px;
+    background: #2D25A0;
+}
+.header-part{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding: 15px;
+    }   
+.half-width{
+    margin-top:50px ;
+    width: 100%; 
+}    
+.half-width img{
+    width: 329px; 
+    height: 259.17px;
+    transition: width 3s, height 3s, transform 3s;
+    }
+.half-width img:hover{
+    width: 350px;
+    height: 300px;
+    }
+h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    line-height: 50px;
+    transition: font-size 3s , transform 3s;
+}
+/* hover over h1 font */
+h1:hover{
+    font-size: 45px;
+}
+/* Header Part End */
+/* ---------------------------
+Main part Start
+----------------- */
+.container{
+    width: 100%;
+    margin-top: 24px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.players-first-part, .players-second-part, .players-third-part, .players-fourth-part, .schedules, .winners{
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.players-first-part{
+    margin-top: 47px;
+}
+.player{
+    width: 330px;
+    padding: 15px;
+    height: 474px;
+}
+.player img{
+    width: 330px;
+    height: 256px;
+}
+/* common Styles */
+.section-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+/* Footer part start */
+.footer{
+    width:100%;
+    height: 213px;
+    margin-bottom: 63px;
+    margin-top: 43px;
+}
+.footer-info{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.logo img{
+    width: 275px;
+    height: 63px;
+}
+/* Foter part end */
+}
+
+ /*------------------ Iphone 5s
+ -------------------------------- */
+@media only screen and (max-width:320px){
+    /* Header Part Start */
+ header{
+    width: 100%;
+    height: 695px;
+    background: #2D25A0;
+}
+.header-part{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding: 5px;
+    }
+.half-width{
+    margin-top:50px ;
+    width: 100%; 
+}
+.half-width img{
+    width: 280px; 
+    height: 259.17px;
+    transition: width 3s, height 3s, transform 3s;
+    }
+.half-width img:hover{
+    width: 300px;
+    height: 300px;
+    }
+h1{
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    line-height: 50px;
+    transition: font-size 3s , transform 3s;
+}
+/* hover over h1 font */
+h1:hover{
+    font-size: 36px;
+}
+/* Header Part End */
+/* ---------------------------
+Main part Start
+----------------- */
+.container{
+    width: 100%;
+    margin-top: 24px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.players-first-part, .players-second-part, .players-third-part, .players-fourth-part, .schedules, .winners{
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.players-first-part{
+    margin-top: 47px;
+}
+.player{
+    width: 300px;
+    padding: 10px;
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+
+/* common Styles */
+.section-title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.schedule{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.fa-futbol, .fa-calendar-week, .fa-clock{
+    font-size: 25px;
+}
+.teams-name{
+    font-size: 15px;
+}
+/* champion styles start */
+
+/*-------------------- 
+main part end
+-------------------- */
+
+/* Footer part start */
+.footer{
+    width:100%;
+    height: 213px;
+    margin-bottom: 63px;
+    margin-top: 43px;
+}
+.footer-info{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.logo img{
+    width: 275px;
+    height: 63px;
+}
+/* Foter part end */
+}
